@@ -13,5 +13,6 @@ solver.Maximize(x + y)
 
 results = solver.Solve()
 
+if results == pywraplp.Solver.OPTIMAL: print('Optimal Found')
 print(f'x: {x.solution_value()}')
 print(f'y: {y.solution_value()}')
